@@ -1,4 +1,4 @@
-import { Card, Foter, NavBar } from "./components";
+import { Card, Foter, Littlecard, NavBar } from "./components";
 import "./App.css";
 import { useEffect, useState } from "react";
 import "./App.css";
@@ -69,6 +69,7 @@ function App() {
           onclick={() => console.log("Hello world")}
         />
       ))}
+      <Littlecard />
       <Foter />
     </div>
   );
