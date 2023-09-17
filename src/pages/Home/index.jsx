@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Foter, NavBar, Slides } from "../../components";
+import Littlecard from "../../components/LittleCard";
 
 const listCard = [
   {
@@ -83,6 +84,7 @@ export function HomePage() {
     <div className="App">
       <NavBar />
       <Slides listCard={listCard} />
+      <Littlecard />
       <Foter />
     </div>
   );
