@@ -86,7 +86,7 @@ export function HomePage() {
       <Styled.SlideContainer>
         <Slides listCard={listCard} />
       </Styled.SlideContainer>
-      <Foter />
+      {/* <Foter /> */}
     </Styled.Container>
   );
 }
