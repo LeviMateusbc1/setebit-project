@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  width: 100vw;
+`;
 
 export const SlideContainer = styled.div`
   margin-top: 150px;

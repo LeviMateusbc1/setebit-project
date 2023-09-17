@@ -22,6 +22,9 @@ export const MenuContent = styled.div`
   color: #008aff;
   display: flex;
   align-items: center;
+  :hover {
+    cursor: pointer;
+  }
 `;
 
 export const MobileTopContainer = styled.div`
@@ -51,6 +54,13 @@ export const ButtonDefault = styled.button`
   border: none;
   font-size: 16px;
   color: #fff;
+  @media (max-width: 960px) {
+    width: 120px;
+    font-size: 14px;
+  }
+  :hover {
+    cursor: pointer;
+  }
 `;
 
 export const ButtonOutlined = styled.button`
@@ -65,6 +75,10 @@ export const ButtonOutlined = styled.button`
   padding: 10px;
   font-size: 16px;
   box-shadow: 0px 3px 6px 0px rgba(158, 158, 158, 0.29);
+  @media (max-width: 960px) {
+    width: 120px;
+    font-size: 14px;
+  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -100,10 +114,16 @@ export const MobileMenuOption = styled.span`
   flex-direction: column;
   display: flex;
   margin-top: 2rem;
+  :hover {
+    color: #008aff;
+    cursor: pointer;
+  }
 `;
 
 export const MobileMenuButtonContainer = styled.div`
+  width: 100%;
   display: flex;
-  gap: 10px;
-  margin-top: 35rem;
+  gap: 0.625rem;
+  margin-top: 30rem;
+  justify-content: center;
 `;
