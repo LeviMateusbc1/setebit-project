@@ -1,0 +1,11 @@
+.foter1 {
+  background-image: url("../footer/imgfooter.svg");
+  background-position: center;
+  background-size: cover;
+  width: 1181px;
+  height: 175px;
+}
+.foter {
+  display: flex;
+  justify-content: center;
+}
