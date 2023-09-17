@@ -1,22 +1,24 @@
-import styles from "./header.css";
+import { ArrowDown, Menu } from "../../icons";
+import { LogoSeteBit } from "../Logo";
+import styles from "./styles.css";
 const NavBar = () => {
   return (
     <div className="Navbar">
       <div className="header">
-        <div> SeteBit </div>
+        <LogoSeteBit />
         <div className="header1 mark">
           <div className="header3 mark">
-            <div className="header2"></div>
-            <div className="header2"></div>
-            <div className="header2"></div>
+            <Menu />
           </div>
           Menu
+          <ArrowDown />
         </div>
         <div className="mark">Ver bolões</div>
         <div className="mark">Aposte com seus números</div>
         <div className="mark">Resultados</div>
         <div className="header4">
-          <button>Crie Bolões</button>
+          <button className={"button-default"}>Crie Bolões</button>
+          <button className={"button-outlined"}>Contato</button>
         </div>
       </div>
       <div className="header5"></div>
