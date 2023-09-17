@@ -1,4 +1,3 @@
-// rafce
 import styles from "./header.css";
 const NavBar = () => {
   return (

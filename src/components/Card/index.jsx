@@ -1,6 +1,6 @@
-import styles from "./Dive.modulo.css";
+import styles from "./styles.css";
 
-const Dive = (text) => {
+const Card = (text) => {
   return (
     <div className={`container ${text.color}`}>
       <div className="content">
@@ -23,4 +23,4 @@ const Dive = (text) => {
   );
 };
 
-export default Dive;
+export default Card;

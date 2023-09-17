@@ -1,8 +1,6 @@
-import logo from "./logo.svg";
+import { Card, Foter, NavBar } from "./components";
 import "./App.css";
-import Dive from "./components/Dive";
-import NavBar from "./components/header/NavBar";
-import Foter from "./components/footer/Foter";
+
 const listDiv = [
   {
     color: "red",
@@ -34,7 +32,7 @@ function App() {
     <div className="App">
       <NavBar />
       {listDiv.map((item, key) => (
-        <Dive
+        <Card
           color={item.color}
           text1={item.text1}
           text2={item.text2}
