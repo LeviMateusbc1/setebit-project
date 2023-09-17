@@ -1,0 +1,18 @@
+.middle1 {
+  background: rgba(255, 215, 57, 0.21);
+  width: 1170px;
+  height: 57px;
+  margin: 0px auto 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.middle1 b {
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}

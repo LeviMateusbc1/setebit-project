@@ -2,6 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Foter, NavBar, Slides } from "../../components";
 import * as Styled from "./styles";
+import Littlecard from "../../components/LittleCard";
+import Middle from "../../components/Middle";
 
 const listCard = [
   {
@@ -87,6 +89,13 @@ export function HomePage() {
       <Styled.SlideContainer>
         <Slides listCard={listCard} />
       </Styled.SlideContainer>
+      <Middle />
+      <Littlecard
+        text1="Lotofácil"
+        text2="A DEFINIR"
+        text3="numeros na"
+        text4="Lotofácil"
+      />
       <Foter />
     </div>
   );
