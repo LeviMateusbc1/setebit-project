@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Foter, NavBar, Slides } from "../../components";
+import * as Styled from "./styles";
 
 const listCard = [
   {
@@ -82,7 +83,10 @@ export function HomePage() {
   return (
     <div className="App">
       <NavBar />
-      <Slides listCard={listCard} />
+
+      <Styled.SlideContainer>
+        <Slides listCard={listCard} />
+      </Styled.SlideContainer>
       <Foter />
     </div>
   );
