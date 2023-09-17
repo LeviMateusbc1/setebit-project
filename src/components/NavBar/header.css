@@ -22,15 +22,9 @@
 }
 .header3 {
   /* display: flex;
-<<<<<<< HEAD
-    justify-content: space-around;
-    width: 60px;
-    height: 40px; */
-=======
   justify-content: space-around;
   width: 60px;
   height: 40px; */
->>>>>>> 85c9ec266a0401604847085ac4e74327b6664d1c
   width: 22px;
   height: 15px;
   display: flex;
