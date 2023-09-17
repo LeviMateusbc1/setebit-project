@@ -2,7 +2,7 @@ import styles from "./Dive.modulo.css";
 
 const Dive = (text) => {
   return (
-    <div className="container">
+    <div className={`container ${text.color}`}>
       <div className="content">
         <div className="bolao1">
           <div>

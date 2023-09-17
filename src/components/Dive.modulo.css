@@ -7,10 +7,6 @@
   display: flex;
   justify-content: center;
   border-radius: 10px;
-  /* R-159,G-23. b-100
-     Other div: R-122, G-139, B-8.
-  
-  */
 }
 .content {
   display: flex;
@@ -52,4 +48,10 @@ h5 {
   height: 30px;
   margin-right: 10px;
   text-align: center;
+}
+.blue {
+  background-color: rgb(159, 23, 100);
+}
+.pink {
+  background-color: rgb(122, 139, 8);
 }
