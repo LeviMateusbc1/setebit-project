@@ -1,5 +1,5 @@
 import { Slides } from "./Slides";
-import Foter from "./footer/Foter";
+import Foter from "./Footer";
 import Card from "./Card";
 import NavBar from "./NavBar/header";
 
