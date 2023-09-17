@@ -3,8 +3,6 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
-import NavBar from "./components/header/NavBar";
-import Foter from "./components/footer/Foter";
 const listDiv = [
   {
     color: "red",
