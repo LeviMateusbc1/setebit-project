@@ -81,13 +81,12 @@ export function HomePage() {
 
   console.log(competitionData);
   return (
-    <div className="App">
+    <Styled.Container>
       <NavBar />
-
       <Styled.SlideContainer>
         <Slides listCard={listCard} />
       </Styled.SlideContainer>
       <Foter />
-    </div>
+    </Styled.Container>
   );
 }
