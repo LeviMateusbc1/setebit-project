@@ -1,20 +1,22 @@
+// api.js
 import axios from "axios";
 
-const api = axios.create({
-  baseURL: "http://api.football-data.org",
+const API_KEY = "a869a450b75e45f6950112e23de01209";
+const API_BASE_URL = "https://api.football-data.org/v4";
+
+const axiosInstance = axios.create({
+  baseURL: API_BASE_URL,
   headers: {
-    "Content-Type": "application/json",
+    "X-Auth-Token": API_KEY,
   },
 });
 
-// api.interceptors.request.use(async (config) => {
-//   const token = "a869a450b75e45f6950112e23de01209";
-
-//   if (token) {
-//     api.defaults.headers.authorization = `Bearer ${token}`;
-//   }
-
-//   return config;
-// });
-
-export default api;
+// Função para buscar partidas
+export const fetchMatches = async () => {
+  try {
+    const response = await axiosInstance.get("/matches");
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};

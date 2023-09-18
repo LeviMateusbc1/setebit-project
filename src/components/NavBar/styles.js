@@ -11,6 +11,7 @@ export const NavBar = styled.div`
   justify-content: center;
   gap: 4rem;
   background: #fff;
+  z-index: 999;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.12),
     0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
   @media (max-width: 1381px) {
@@ -105,7 +106,7 @@ export const MobileMenuContent = styled.div`
     width: 60%;
     height: 100vh;
     padding: 20px;
-    z-index: 999;
+    z-index: 99;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.12),
       0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
   }
@@ -138,11 +139,11 @@ export const MobileMenuButtonContainer = styled.div`
 `;
 
 export const Overlay = styled.div`
+  width: 100%;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 99;
+  z-index: 9;
 `;
