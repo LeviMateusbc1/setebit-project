@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useMediaQuery } from "@react-hook/media-query";
-import { Menu } from "../../icons";
+import { CloseIcon, Menu } from "../../icons";
 import { LogoSeteBit } from "../Logo";
 import * as Style from "./styles";
 
@@ -15,20 +15,30 @@ const NavBar = () => {
   return (
     <Style.NavBar>
       {isTablet ? (
-        <Style.MobileTopContainer>
+        <>
+          <Style.LogoContainer>
+            <LogoSeteBit />
+          </Style.LogoContainer>
           <Style.MenuContent onClick={toggleMobileMenu}>
             <Menu />
           </Style.MenuContent>
+        </>
+      ) : (
+        <>
           <LogoSeteBit />
+          <Style.NavBarOption>Ver bolões</Style.NavBarOption>
+          <Style.NavBarOption>Aposte com seus números</Style.NavBarOption>
+          <Style.NavBarOption>Resultados</Style.NavBarOption>
           <Style.ButtonContainer>
+            <Style.ButtonOutlined>Contato</Style.ButtonOutlined>
             <Style.ButtonDefault>Crie Bolões</Style.ButtonDefault>
           </Style.ButtonContainer>
-        </Style.MobileTopContainer>
-      ) : null}
+        </>
+      )}
       {isMobileMenuOpen ? (
         <Style.MobileMenuContent>
           <Style.MenuContent onClick={toggleMobileMenu}>
-            <Menu />
+            <CloseIcon />
           </Style.MenuContent>
           <Style.MobileMenuOption>Ver bolões</Style.MobileMenuOption>
           <Style.MobileMenuOption>
@@ -40,18 +50,6 @@ const NavBar = () => {
             <Style.ButtonDefault>Crie Bolões</Style.ButtonDefault>
           </Style.MobileMenuButtonContainer>
         </Style.MobileMenuContent>
-      ) : null}
-      {!isTablet ? (
-        <>
-          <LogoSeteBit />
-          <Style.NavBarOption>Ver bolões</Style.NavBarOption>
-          <Style.NavBarOption>Aposte com seus números</Style.NavBarOption>
-          <Style.NavBarOption>Resultados</Style.NavBarOption>
-          <Style.ButtonContainer>
-            <Style.ButtonOutlined>Contato</Style.ButtonOutlined>
-            <Style.ButtonDefault>Crie Bolões</Style.ButtonDefault>
-          </Style.ButtonContainer>
-        </>
       ) : null}
     </Style.NavBar>
   );

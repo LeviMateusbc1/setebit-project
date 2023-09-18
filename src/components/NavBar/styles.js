@@ -18,10 +18,13 @@ export const NavBar = styled.div`
   }
 `;
 
+export const LogoContainer = styled.div`
+  width: 70%;
+`;
+
 export const MenuContent = styled.div`
   color: #008aff;
   display: flex;
-  align-items: center;
   :hover {
     cursor: pointer;
   }
@@ -94,8 +97,8 @@ export const MobileMenuContent = styled.div`
     background: #fff;
     position: absolute;
     top: 0;
-    left: 0;
-    width: 80%;
+    right: 0;
+    width: 60%;
     height: 100vh;
     padding: 20px;
     z-index: 2;

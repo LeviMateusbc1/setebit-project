@@ -1,11 +1,11 @@
-// rafce
-import styles from "./styles.css";
+import * as Style from "./styles";
+
 const Littlecard = () => {
   return (
     <div>
-      <div className="card1">
-        <div className="card2"></div>
-      </div>
+      <Style.Card1 className="card1">
+        <Style.Card2 className="card2"></Style.Card2>
+      </Style.Card1>
     </div>
   );
 };

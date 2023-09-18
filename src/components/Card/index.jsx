@@ -1,9 +1,9 @@
-import styles from "./styles.css";
+import * as Styled from "./styles";
 
 const Card = (text) => {
   return (
-    <div className={`container ${text.color}`}>
-      <div className="content">
+    <Styled.Container>
+      <Styled.Content>
         <div className="bolao1">
           <div>
             <h2>{text.title}</h2>
@@ -17,8 +17,8 @@ const Card = (text) => {
         <div className="bolao3">
           <div className="back">Ver Mais</div>
         </div>
-      </div>
-    </div>
+      </Styled.Content>
+    </Styled.Container>
   );
 };
 
