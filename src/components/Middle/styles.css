@@ -1,0 +1,74 @@
+.middle1 {
+  background: rgba(255, 215, 57, 0.21);
+  width: 1170px;
+  height: 57px;
+  margin: 0px auto 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.middle1 b {
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+.middle2 {
+  display: flex;
+  gap: 21px;
+  align-items: center;
+}
+.middle3 {
+  background-image: url("../../icons/Middle/Middle.svg");
+  width: 40px;
+  height: 40px;
+}
+.middle4 {
+  background-image: url("../../icons/Middle/Middle2.svg");
+  width: 20px;
+  height: 20px;
+}
+.middle5 {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+h6 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  display: inline;
+}
+.middle6 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+}
+.middle7 {
+  width: 42px;
+  height: 15px;
+  border-radius: 16px;
+  padding: 0px 11.2px;
+  background: #5ca89d;
+  /* display: inline; */
+  font-size: 10px;
+}
+.middle8 {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.middle6 b {
+  margin-left: 25px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+}

@@ -1,11 +1,23 @@
-import * as Style from "./styles";
-
-const Littlecard = () => {
+// rafce
+import styles from "./styles.css";
+const Littlecard = (card) => {
   return (
     <div>
-      <Style.Card1 className="card1">
-        <Style.Card2 className="card2"></Style.Card2>
-      </Style.Card1>
+      <div className="card1">
+        <div className={`card2 ${card.color}`}>
+          {card.text1}
+          <br />
+          {card.text2}
+        </div>
+        <div className="card3">
+          Aposte com seus <br />
+          {card.text3} <b>{card.text4}</b>
+        </div>
+        <div className="card4">
+          <div className="card5"></div>
+          <b>HOJE</b>
+        </div>
+      </div>
     </div>
   );
 };
