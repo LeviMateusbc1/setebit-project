@@ -101,7 +101,7 @@ export const MobileMenuContent = styled.div`
     width: 60%;
     height: 100vh;
     padding: 20px;
-    z-index: 2;
+    z-index: 999;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.12),
       0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
   }
@@ -129,4 +129,14 @@ export const MobileMenuButtonContainer = styled.div`
   gap: 0.625rem;
   margin-top: 30rem;
   justify-content: center;
+`;
+
+export const Overlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
 `;

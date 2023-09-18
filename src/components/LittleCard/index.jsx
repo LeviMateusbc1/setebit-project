@@ -1,5 +1,4 @@
 // rafce
-import styles from "./styles.css";
 const Littlecard = (card) => {
   return (
     <div>

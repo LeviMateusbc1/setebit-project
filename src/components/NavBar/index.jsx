@@ -51,6 +51,7 @@ const NavBar = () => {
           </Style.MobileMenuButtonContainer>
         </Style.MobileMenuContent>
       ) : null}
+      {isMobileMenuOpen && <Style.Overlay onClick={toggleMobileMenu} />}
     </Style.NavBar>
   );
 };
