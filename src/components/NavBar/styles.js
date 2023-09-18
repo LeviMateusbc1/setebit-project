@@ -25,7 +25,7 @@ export const LogoContainer = styled.div`
 export const MenuContent = styled.div`
   color: #008aff;
   display: flex;
-  :hover {
+  &:hover {
     cursor: pointer;
   }
 `;
@@ -43,6 +43,10 @@ export const NavBarOption = styled.span`
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  &:hover {
+    color: #008aff;
+    cursor: pointer;
+  }
 `;
 
 export const ButtonDefault = styled.button`
@@ -58,10 +62,10 @@ export const ButtonDefault = styled.button`
   font-size: 16px;
   color: #fff;
   @media (max-width: 960px) {
-    width: 120px;
+    width: 150px;
     font-size: 14px;
   }
-  :hover {
+  &:hover {
     cursor: pointer;
   }
 `;
@@ -79,7 +83,7 @@ export const ButtonOutlined = styled.button`
   font-size: 16px;
   box-shadow: 0px 3px 6px 0px rgba(158, 158, 158, 0.29);
   @media (max-width: 960px) {
-    width: 120px;
+    width: 150px;
     font-size: 14px;
   }
 `;
@@ -117,7 +121,8 @@ export const MobileMenuOption = styled.span`
   flex-direction: column;
   display: flex;
   margin-top: 2rem;
-  :hover {
+
+  &:hover {
     color: #008aff;
     cursor: pointer;
   }
@@ -126,9 +131,10 @@ export const MobileMenuOption = styled.span`
 export const MobileMenuButtonContainer = styled.div`
   width: 100%;
   display: flex;
-  gap: 0.625rem;
-  margin-top: 30rem;
+  gap: 1.5rem;
+  margin-top: 2rem;
   justify-content: center;
+  flex-direction: column;
 `;
 
 export const Overlay = styled.div`

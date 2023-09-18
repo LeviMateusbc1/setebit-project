@@ -1,18 +1,31 @@
-import styles from "./Foter.css";
+import { useMediaQuery } from "@react-hook/media-query";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  YoutubeIcon,
+} from "../../icons";
+import * as Style from "./style";
 
-const Foter = () => {
+const Footer = () => {
+  const isTablet = useMediaQuery("(max-width: 960px)");
   return (
-    <div className="foter">
-      <div className="foter1"></div>
-      <div className="foter2">Siga nossas redes sociais:</div>
-      <div className="foter7">
-        <div className="foter3"></div>
-        <div className="foter4"></div>
-        <div className="foter5"></div>
-        <div className="foter6"></div>
-      </div>
-    </div>
+    <Style.FooterContainer>
+      {!isTablet ? (
+        <Style.FooterWrapper>
+          <img src="/banner-footer.png" alt="Banner do Footer" />
+        </Style.FooterWrapper>
+      ) : null}
+      <Style.FooterText>Siga nossas redes sociais:</Style.FooterText>
+      <Style.FooterIconsContainer>
+        <InstagramIcon />
+        <LinkedinIcon />
+        <FacebookIcon />
+        <YoutubeIcon />
+      </Style.FooterIconsContainer>
+      ©Levi Mateus
+    </Style.FooterContainer>
   );
 };
 
-export default Foter;
+export default Footer;

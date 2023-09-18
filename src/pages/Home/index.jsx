@@ -1,6 +1,5 @@
-import { NavBar, Slides } from "../../components";
+import { Footer, NavBar, Slides } from "../../components";
 import * as Styled from "./styles";
-import Littlecard from "../../components/LittleCard";
 import Middle from "../../components/Middle";
 
 export function HomePage() {
@@ -11,7 +10,7 @@ export function HomePage() {
         <Slides listCard={[]} />
       </Styled.SlideContainer>
       <Middle text1="LF-NGD-017" text2="19" text3="150" text4="65" />
-      {/* <Foter /> */}
+      <Footer />
     </Styled.Container>
   );
 }
