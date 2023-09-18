@@ -1,6 +1,6 @@
 import { Container } from "./style";
 
-export function LogoSeteBit() {
+export function Logo() {
   return (
     <Container>
       <img src="../../logo-setebit.png" alt="logo-setebit" />

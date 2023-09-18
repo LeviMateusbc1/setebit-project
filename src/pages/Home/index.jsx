@@ -11,7 +11,7 @@ export function HomePage() {
   useEffect(() => {
     async function getMatches() {
       try {
-        const response = await fetch("/v4/areas/"); // Use o prefixo '/api'
+        const response = await fetch("v4/areas/"); // Use o prefixo '/api'
         const data = await response.json();
         setMatches(data.matches); // Supondo que a resposta tem uma propriedade 'matches'
       } catch (error) {

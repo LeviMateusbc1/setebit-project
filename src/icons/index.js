@@ -5,6 +5,7 @@ import { InstagramIcon } from "./Instagram";
 import { YoutubeIcon } from "./Youtube";
 import { FacebookIcon } from "./Facebook";
 import { LinkedinIcon } from "./Linkedin";
+import { Logo } from "./Logo";
 
 export {
   Menu,
@@ -13,5 +14,6 @@ export {
   FacebookIcon,
   InstagramIcon,
   YoutubeIcon,
+  Logo,
   LinkedinIcon,
 };

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useMediaQuery } from "@react-hook/media-query";
-import { CloseIcon, Menu } from "../../icons";
-import { LogoSeteBit } from "../Logo";
+import { CloseIcon, Logo, Menu } from "../../icons";
 import * as Style from "./styles";
 
 const NavBar = () => {
@@ -17,7 +16,7 @@ const NavBar = () => {
       {isTablet ? (
         <>
           <Style.LogoContainer>
-            <LogoSeteBit />
+            <Logo />
           </Style.LogoContainer>
           <Style.MenuContent onClick={toggleMobileMenu}>
             <Menu />
@@ -25,7 +24,7 @@ const NavBar = () => {
         </>
       ) : (
         <>
-          <LogoSeteBit />
+          <Logo />
           <Style.NavBarOption>Ver bolões</Style.NavBarOption>
           <Style.NavBarOption>Aposte com seus números</Style.NavBarOption>
           <Style.NavBarOption>Resultados</Style.NavBarOption>
