@@ -88,6 +88,7 @@ export function HomePage() {
       <Styled.SlideContainer>
         <Slides listCard={listCard} />
       </Styled.SlideContainer>
+      <Middle text1="LF-NGD-017" text2="19" text3="150" text4="65" />
       {/* <Foter /> */}
     </Styled.Container>
   );
