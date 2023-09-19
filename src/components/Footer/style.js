@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.div`
+  width: 100vw;
+  height: 100px;
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-top: 1px solid #f4f4f4;
+  border-top: 1px solid #a2a2a2;
 `;
 
 export const FooterWrapper = styled.div`

@@ -1,15 +1,13 @@
-import { Footer, NavBar, Slides, Input } from "../../components";
-import * as Styled from "./styles";
-import Middle from "../../components/Middle";
 import { useEffect, useState } from "react";
-import { fetchMatches } from "../../services";
+import { Footer, NavBar, Slides, Input, CustomTable } from "../../components";
+import * as Styled from "./styles";
 
 export function HomePage() {
   const [name, setName] = useState("");
   const [matches, setMatches] = useState([]);
 
   useEffect(() => {
-    async function getMatches() {
+    async function fetchMatches() {
       try {
         const response = await fetch("v4/areas/"); // Use o prefixo '/api'
         const data = await response.json();
@@ -19,7 +17,7 @@ export function HomePage() {
       }
     }
 
-    getMatches();
+    fetchMatches();
   }, []);
 
   const handleNameChange = (e) => {
@@ -28,21 +26,6 @@ export function HomePage() {
   return (
     <Styled.Container>
       <NavBar />
-      <Styled.InputContainer>
-        <Input
-          label="Data Inicial"
-          type="date"
-          value={name}
-          onChange={(e) => handleNameChange(e)}
-        />
-        <Input
-          label="Data Final"
-          type="date"
-          value={name}
-          onChange={(e) => handleNameChange(e)}
-        />
-      </Styled.InputContainer>
-      <Middle text1="LF-NGD-017" text2="19" text3="150" text4="65" />
       <Styled.SlideContainer>
         <Slides
           listCard={[
@@ -73,6 +56,21 @@ export function HomePage() {
           ]}
         />
       </Styled.SlideContainer>
+      <Styled.InputContainer>
+        <Input
+          label="Data Inicial"
+          type="date"
+          value={name}
+          onChange={(e) => handleNameChange(e)}
+        />
+        <Input
+          label="Data Final"
+          type="date"
+          value={name}
+          onChange={(e) => handleNameChange(e)}
+        />
+      </Styled.InputContainer>
+      <CustomTable />
       <Footer />
     </Styled.Container>
   );
