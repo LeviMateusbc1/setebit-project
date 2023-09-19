@@ -30,28 +30,28 @@ export function HomePage() {
         <Slides
           listCard={[
             {
-              title: "Campeonato 01",
+              imgUrl:
+                "https://clubepaineiras.org.br/wp-content/uploads/2022/05/jogadores.jpg",
             },
             {
-              title: "Campeonato 01",
+              imgUrl:
+                "https://images.prismic.io/rivalryglhf/d199c12e-41cc-48fe-be24-0da34a06c55c_campeonatos.jpg",
             },
             {
-              title: "Campeonato 01",
+              imgUrl:
+                "https://www.leituradejogo.com.br/wp-content/uploads/2018/06/champions-league.jpg",
             },
             {
-              title: "Campeonato 01",
+              imgUrl:
+                "https://www.ogol.com.br/img/temas/6_campeonatos_do_mundo.png",
             },
             {
-              title: "Campeonato 01",
+              imgUrl:
+                "https://imagens.ebc.com.br/58H0l1P4TDvjGH2LPgD_yp7vgjA=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/brasileiro_feminino_2021_corinthians_campeao.jpg",
             },
             {
-              title: "Campeonato 01",
-            },
-            {
-              title: "Campeonato 01",
-            },
-            {
-              title: "Campeonato 01",
+              imgUrl:
+                "https://s2-ge.glbimg.com/KCHUSl1ZHdoanATlAKTgoMixlng=/0x0:1080x608/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/K/Q/whez6GSh2HQK1X6PK2MA/inicio-brasileirao.jpg",
             },
           ]}
         />

@@ -87,6 +87,9 @@ export const ButtonOutlined = styled.button`
     width: 150px;
     font-size: 14px;
   }
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const ButtonContainer = styled.div`

@@ -2,33 +2,35 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Card from "../Card";
 import * as Style from "./style";
-import { useMediaQuery } from "@react-hook/media-query";
+import "swiper/css/pagination";
 
 export function Slides({ ...props }) {
-  const isTablet = useMediaQuery("(max-width: 960px)");
-
   return (
     <Style.Container>
       <Swiper
         navigation
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={isTablet ? 40 : 80}
-        slidesPerView={isTablet ? 1 : 3}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+        slidesPerView={1}
         pagination={{ clickable: true }}
+        autoplay={{ delay: 4000 }}
       >
         {props.listCard.map((item, key) => (
           <SwiperSlide>
-            <Card
+            <img
+              src={item.imgUrl}
               key={key}
-              title={item.title}
-              subtitle={item.subtitle}
-              info={item.info}
-              details={item.details}
-              color={item.color}
+              alt={`${item.imgUrl}${key}`}
+              width={"100%"}
+              height={"700px"}
             />
           </SwiperSlide>
         ))}

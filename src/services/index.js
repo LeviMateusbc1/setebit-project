@@ -1,4 +1,3 @@
-// api.js
 import axios from "axios";
 
 const API_KEY = "a869a450b75e45f6950112e23de01209";
@@ -11,7 +10,6 @@ const axiosInstance = axios.create({
   },
 });
 
-// Função para buscar partidas
 export const fetchMatches = async () => {
   try {
     const response = await axiosInstance.get("/matches");
