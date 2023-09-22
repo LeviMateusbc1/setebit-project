@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/seurepositorio/static/css/main.9a6f45d6.css",
+    "main.js": "/seurepositorio/static/js/main.c6b826c5.js",
+    "index.html": "/seurepositorio/index.html",
+    "main.9a6f45d6.css.map": "/seurepositorio/static/css/main.9a6f45d6.css.map",
+    "main.c6b826c5.js.map": "/seurepositorio/static/js/main.c6b826c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a6f45d6.css",
+    "static/js/main.c6b826c5.js"
+  ]
+}
